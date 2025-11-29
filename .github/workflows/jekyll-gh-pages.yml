@@ -35,7 +35,7 @@ jobs:
             - name: Build slides
               run: python ./build_slides.py
             - name: Convert slides to html
-              run: marp --html ./index.md
+              run: marp --theme ./assets/beam.css --html ./index.md
             - name: Setup Pages
               uses: actions/configure-pages@v4
             - name: Build with Jekyll
